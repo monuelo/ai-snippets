@@ -24,13 +24,16 @@ def main():
     # You will need to complete this function imported from the ClassifyNB script.
     # Be sure to change to that code tab to complete this quiz.
     clf = classify(features_train, labels_train)
-    print('Python Naive Bays Example\n - Accuracy Score: {}'.format(clf.score(features_test, labels_test)))
+    print('Python Naive Bays Example')
+
+    accuracy = clf.score(features_test, labels_test)
+    print('Accuracy score: {}'.format(accuracy))
 
 
     ### draw the decision boundary with the text points overlaid
     prettyPicture(clf, features_test, labels_test)
-    output_image("test.png", "png", open("test.png", "rb").read())
-    os.system('display test.png &')
+    output_image("naive_bayes.png", "png", open("naive_bayes.png", "rb").read())
+    os.system('display naive_bayes.png &')
 
 
 if __name__ == '__main__':
