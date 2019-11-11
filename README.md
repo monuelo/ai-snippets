@@ -1,2 +1,2 @@
-# AI-Snippets
-Artificial Intelligence Snippets in Python
+# AI Snippets
+Artificial Intelligence code snippets in Python
